@@ -7,14 +7,14 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {
     char ch = Serial.read();
-    if (ch == "\r" || ch == "\n") return;
-    if (ch == "a") {
+    if (ch == '\r' || ch == '\n') return;
+    if (ch == 'a') {
       Serial.println("Selected A");
     } 
-    else if (ch == "b") {
+    else if (ch == 'b') {
       Serial.println("Selected B");
     } 
-    //else if (ch == "h") {
+    //else if (ch == 'h') {
     //  Serial.println("Hello from ESP32!");
     //}
     else {
